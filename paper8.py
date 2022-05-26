@@ -1,0 +1,13 @@
+r=int(input('ebnter rows'))
+c=int(input('enter column'))
+import numpy as np
+a=list(map(int,input().split()))
+b=np.array(a)
+c=b.reshape(r,c)
+d=np.transpose(c)
+print(d)
+e=np.diagonal(c)
+print(e)
+f=np.max(c)
+g=np.min(c)
+print(f,g)
